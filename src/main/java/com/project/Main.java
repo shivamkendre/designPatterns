@@ -1,5 +1,6 @@
 package com.project;
 
+import com.project.client.PaymentClient;
 import com.project.observer.DecoratorClient;
 import com.project.observer.InvoiceService;
 import com.project.observer.NotificationService;
@@ -29,8 +30,10 @@ public class Main {
 //        System.out.println("after unsubscribe");
 //        notificationService.event();
 
-        DecoratorClient client = new DecoratorClient();
-        client.createDecorator();
+//        DecoratorClient client = new DecoratorClient();
+//        client.createDecorator();
+        PaymentClient paymentClient = new PaymentClient();
+        paymentClient.payment();
     }
 }
 
